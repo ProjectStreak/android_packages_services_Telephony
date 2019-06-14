@@ -204,6 +204,10 @@
 
     <!-- Needed for some qti-telephony-common jars  -->
     <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+    <!-- Allows us to whitelist receivers of the
+         ACTION_SIM_SLOT_STATUS_CHANGED broadcast to start activities
+         from the background.  -->
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
 
     <application android:name="PhoneApp"
             android:persistent="true"
